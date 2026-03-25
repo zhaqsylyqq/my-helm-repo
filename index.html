@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KBTU DevOps II - Lab 8 Registry</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Helm Chart Registry</h1>
+    <p>This repository hosts the Helm charts for Lab 8.</p>
+    
+    <h3>Available Charts:</h3>
+    <ul>
+        <li><strong>my-app-chart:</strong> Includes webapp, NetworkPolicies, and Roles.</li>
+    </ul>
+
+    <h3>How to Use:</h3>
+    <ol>
+        <li>Add this repo: <br><code>helm repo add my-lab-repo https://zhaqsylyqq.github.io/my-helm-repo/</code></li>
+        <li>Update: <br><code>helm repo update</code></li>
+        <li>Install: <br><code>helm install my-release my-lab-repo/my-app-chart</code></li>
+    </ol>
+</body>
+</html>
